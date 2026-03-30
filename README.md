@@ -8,6 +8,14 @@ An AI-powered project that generates tailored CVs and cover letters based on you
 - [Gemini CLI](https://geminicli.com)
 - Or any AI assistant with file access capabilities
 
+## Why This Project Exists
+
+1. Most companies now use AI-based screening in their early hiring stages. If your CV isn't well-aligned with the job requirements, it may get filtered out before a human ever sees it.
+
+2. As someone who also reviews candidates, I often see CVs that are clearly mass-sent across dozens of job postings. They're too generic — making it hard to tell whether the candidate actually meets specific requirements, simply because the relevant skills aren't highlighted or mentioned.
+
+3. Creating a tailored CV for every application is time-consuming. This project solves that by generating CVs that are dynamic and flexible — adapting to both your actual skills and the specific job requirements — so each application is more effective and on target.
+
 ## How It Works
 
 1. Add your CV/profile data to `0-profile/`

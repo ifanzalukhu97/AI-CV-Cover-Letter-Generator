@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cover Letter - {{full_name}}</title>
+<style>
+  @page { size: A4; margin: 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: #222;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 15mm;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 { font-size: 20pt; color: #1a1a2e; margin-bottom: 4px; }
+  .contact { font-size: 9.5pt; color: #555; margin-bottom: 20px; }
+  .contact a { color: #2563eb; text-decoration: none; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 12px 0; }
+  p { margin-bottom: 12px; }
+  .closing { margin-top: 20px; }
+  .export-btn {
+    position: fixed; top: 20px; right: 20px; padding: 10px 20px;
+    background: #2563eb; color: #fff; border: none; border-radius: 6px;
+    cursor: pointer; font-size: 11pt; z-index: 100;
+  }
+  .export-btn:hover { background: #1d4ed8; }
+  @media print {
+    body { background: none; padding: 0; }
+    .page { box-shadow: none; padding: 0; }
+    .export-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+<button class="export-btn" onclick="window.print()">Export PDF</button>
+<div class="page">
+
+  <!-- AI will generate the full cover letter HTML content here -->
+
+  <h1>{{full_name}}</h1>
+  <div class="contact">
+    {{location}}<br>
+    <a href="mailto:{{email}}">{{email}}</a> |
+    <a href="{{linkedin_url}}">{{linkedin_display}}</a>
+  </div>
+  <hr>
+
+  <p>Dear Hiring Team at {{company_name}},</p>
+
+  <p>{{opening_paragraph}}</p>
+
+  <p>{{current_role_paragraph}}</p>
+
+  <p>{{culture_fit_paragraph}}</p>
+
+  <p>{{community_paragraph}}</p>
+
+  <p>{{closing_paragraph}}</p>
+
+  <p>{{work_preference_statement}}</p>
+
+  <p>Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to {{company_name}}'s mission.</p>
+
+  <div class="closing">
+    <p>Best regards,<br>{{full_name}}</p>
+  </div>
+
+</div>
+</body>
+</html>

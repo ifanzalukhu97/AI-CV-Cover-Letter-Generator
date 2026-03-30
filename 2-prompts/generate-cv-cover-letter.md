@@ -22,6 +22,7 @@ Before generating new results, **clear/empty the previous output files first** i
 You may read:
 - All `.md` files inside the `0-profile/` folder (CV data, skill information, and other personal profile data). Skip any non-Markdown files (e.g., `.pdf`).
 - Example outputs inside `3-templates/` folder (for reference style/structure only, NOT for the actual jobdesk)
+- **Do NOT** read or reference the `examples/` folder. It is for documentation purposes only.
 
 ## Task
 Using all the data above and following the structure/style of the templates, generate a tailored CV and cover letter based on the job description in **`1-jobs/jobdesk.md`**.

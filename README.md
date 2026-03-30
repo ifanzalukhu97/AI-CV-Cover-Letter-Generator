@@ -34,8 +34,8 @@ scripts/            → Utility scripts (e.g., PDF to Markdown converter)
 ### 0. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/ai-cv-cover-letter-generator.git
-cd ai-cv-cover-letter-generator
+git clone https://github.com/ifanzalukhu97/AI-CV-Cover-Letter-Generator.git
+cd AI-CV-Cover-Letter-Generator
 ```
 
 ### 1. Add Your Profile Data

@@ -20,7 +20,7 @@ Before generating new results, **clear/empty the previous output files first** i
 
 ## Reference Files
 You may read:
-- All files inside the `0-profile/` folder (CV data, skill information, and other personal profile data)
+- All `.md` files inside the `0-profile/` folder (CV data, skill information, and other personal profile data). Skip any non-Markdown files (e.g., `.pdf`).
 - Example outputs inside `3-templates/` folder (for reference style/structure only, NOT for the actual jobdesk)
 
 ## Task
@@ -40,15 +40,29 @@ Using all the data above and following the structure/style of the templates, gen
 - However, if the job description already mentions a salary range that is equal to or higher than the user's expected salary, do **not** include the expected salary in the CV.
 
 ### Gap Handling Notes
-At the end of the CV, add a **"Notes / Gap Handling"** section.  
-This section must be based **only on the requirements in `1-jobs/jobdesk.md`**, and should not include items from template files.
 
-For each gap found between the job requirements and the user's profile:
-- State the required skill/technology
-- Explain the user's closest relevant experience or transferable skill
-- Be honest but frame gaps positively
+Before generating the CV, analyze the job requirements against the user's profile and identify any gaps.
 
-If the user has documented known gaps or conditions in `0-profile/`, incorporate those when relevant to the jobdesk.
+**Do NOT generate the CV yet.** Instead, present the list of identified gaps to the user first:
+
+> I found the following gaps between the job requirements and your profile:
+>
+> 1. **[Skill/Technology]** — not found in your profile
+> 2. **[Skill/Technology]** — not found in your profile
+> ...
+>
+> For each gap, do you:
+> - Actually have this skill/experience? (I'll add it to your profile)
+> - Want me to frame it as a transferable skill?
+> - Want to skip/exclude it?
+
+Present all gaps at once so the user can respond to all of them in a single reply.
+
+After the user confirms how to handle each gap:
+- If the user provides new skill/experience info, save it to `0-profile/additional-skill-information.md`.
+- Then generate the "Notes / Gap Handling" section at the end of the CV based on the confirmed gaps only.
+- This section must be based **only on the requirements in `1-jobs/jobdesk.md`**, and should not include items from template files.
+- Be honest but frame gaps positively.
 
 ## Output
 After processing `1-jobs/jobdesk.md`, you must produce all output files inside the `4-output/` folder:

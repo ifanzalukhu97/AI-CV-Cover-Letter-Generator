@@ -6,6 +6,11 @@
 <!-- Options: Office / Hybrid / Remote / Open to Any -->
 Preference: 
 
+## Remote Experience
+<!-- If Work Preference is Remote or Hybrid, the AI will ask about your remote working experience -->
+Experience: 
+Duration: 
+
 ## CV & Cover Letter Language
 <!-- Options: English / Bahasa Indonesia / Other (specify) -->
 Language: 

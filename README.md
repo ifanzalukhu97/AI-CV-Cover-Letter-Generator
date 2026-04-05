@@ -16,6 +16,23 @@ An AI-powered project that generates tailored CVs and cover letters based on you
 
 3. Creating a tailored CV for every application is time-consuming. This project solves that by generating CVs that are dynamic and flexible — adapting to both your actual skills and the specific job requirements — so each application is more effective and on target.
 
+## Demo / Simulation
+
+See how this project works in action with various AI assistants and IDEs.
+
+### Kiro
+
+▶️ Click thumbnail to play
+
+[![Demo with Kiro](https://img.youtube.com/vi/uvWVALgBo4M/0.jpg)](https://www.youtube.com/watch?v=uvWVALgBo4M)
+
+> 🇮🇩 This video is in Indonesian (Bahasa Indonesia).
+> Full walkthrough using Kiro IDE — from setup to generating a tailored CV and cover letter.
+
+---
+
+More demos coming soon (Cursor, GitHub Copilot Chat, etc.)
+
 ## How It Works
 
 1. Add your CV/profile data to `0-profile/`
